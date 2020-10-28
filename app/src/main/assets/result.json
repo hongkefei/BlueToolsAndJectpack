@@ -1,0 +1,57 @@
+{
+  "code": 1000,
+  "message": "成功",
+  "shoplist": [{
+    "shopingID": 1001,
+    "shopingName": "商店一号",
+    "sList": [{
+      "sID": 101,
+      "sNmae": "华为手机",
+      "sPrice": "2000",
+      "sCount": "100"
+    }, {
+      "sID": 102,
+      "sNmae": "小米手机",
+      "sPrice": "2003",
+      "sCount": "199"
+    }]
+  }, {
+    "shopingID": 1002,
+    "shopingName": "商店二号",
+    "sList": [{
+      "sID": 201,
+      "sNmae": "Thinkpad",
+      "sPrice": "3000",
+      "sCount": "10"
+    }, {
+      "sID": 202,
+      "sNmae": "华硕电脑",
+      "sPrice": "4000",
+      "sCount": "10"
+    }]
+  }, {
+    "shopingID": 1003,
+    "shopingName": "商店三号",
+    "sList": [{
+      "sID": 301,
+      "sNmae": "丝袜",
+      "sPrice": "10",
+      "sCount": "10"
+    }, {
+      "sID": 302,
+      "sNmae": "网袜",
+      "sPrice": "9",
+      "sCount": "10"
+    }, {
+      "sID": 303,
+      "sNmae": "短袜",
+      "sPrice": "3",
+      "sCount": "10"
+    }, {
+      "sID": 304,
+      "sNmae": "渔网",
+      "sPrice": "100",
+      "sCount": "134"
+    }]
+  }]
+}

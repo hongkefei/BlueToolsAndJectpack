@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--第一步生成dataxml文件,第二步，在xml中，引用数据源中的数据-->
+    <data>
+        <variable
+            name="result"
+            type="com.wf.tkt.trecycle.bean.Result" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recyle_title"
+            android:text="@{result.url}"
+            android:background="#0f0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+        <!--   &lt;!&ndash;        图片如何加载&ndash;&gt;-->
+        <ImageView
+            app:layout_constraintTop_toBottomOf="@id/recyle_title"
+            android:id="@+id/recycle_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout><!--
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="java.util.ArrayList"/>
+        <variable
+            name="listbean"
+            type="ArrayList&lt;com.wf.tkt.trecycle.bean.Result>" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/recyle_title"
+            android:text="@{listbean[1]}"
+            android:background="#0f0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+&lt;!&ndash;        图片如何加载&ndash;&gt;
+        <ImageView
+            app:layout_constraintTop_toBottomOf="@id/recyle_title"
+            android:id="@+id/recycle_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+-->

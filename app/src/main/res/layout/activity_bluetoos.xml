@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/seachbluet"
+        android:text="开始搜索"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+<!--
+    <Button
+        android:id="@+id/startpair"
+        android:text="开始配对"
+        app:layout_constraintTop_toBottomOf="@id/seachbluet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bluetoos_recycle"
+        android:background="#0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/seachbluet" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
